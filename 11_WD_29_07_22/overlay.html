@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay</title>
+    <style>
+        .work {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            /* background-color: lightsalmon; */
+            background-image: url(img.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .work:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.9));
+        }
+
+        .work1 {
+            /* width: 100%;
+            height: 100px; */
+            width: 300px;
+            height: 300px;
+            background-color: darkcyan;
+            /* position: absolute; */
+            position: relative;
+            top: 0px;
+            left: 0px;
+            height: 300px;
+            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+        }
+
+        .work2 {
+            width: 100%;
+            background-color: darkcyan;
+            /* position: absolute; */
+            position: relative;
+            left: 0px;
+            top: 80%;
+            height: 30px;
+            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+        }
+
+        span {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="work">
+        <div class="work1">
+            <span>Hello ADIT</span>
+        </div>
+        <!-- <div class="work2">
+            <span>Welcome</span>
+        </div> -->
+    </div>
+</body>
+
+</html>

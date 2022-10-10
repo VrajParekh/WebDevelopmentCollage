@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>DialPad</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tb">
+            <table>
+                <tr>
+                    <td colspan="3">
+                        <p id="pg"></p>
+                    </td>
+                </tr>
+                <tr align="right">
+                    <td colspan="3"><button id="b_backspace" onclick="backspace()"><span
+                                class="material-symbols-outlined">
+                                backspace
+                            </span></button></td>
+                </tr>
+                <tr>
+                    <td><button id="b1" value="1" onclick="b1()">1</button></td>
+                    <td><button id="b2" value="2" onclick="b2()">2</button></td>
+                    <td><button id="b3" value="3" onclick="b3()">3</button></td>
+                </tr>
+                <tr>
+                    <td><button id="b4" value="4" onclick="b4()">4</button></td>
+                    <td><button id="b5" value="5" onclick="b5()">5</button></td>
+                    <td><button id="b6" value="6" onclick="b6()">6</button></td>
+                </tr>
+                <tr>
+                    <td><button id="b7" value="7" onclick="b7()">7</button></td>
+                    <td><button id="b8" value="8" onclick="b8()">8</button></td>
+                    <td><button id="b9" value="9" onclick="b9()">9</button></td>
+                </tr>
+                <tr>
+                    <td><button id="b*" value="*" onclick="b_star()">*</button></td>
+                    <td><button id="b0" value="0" onclick="b0()">0</button></td>
+                    <td><button id="b#" value="#" onclick="b_hash()">#</button></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="3"><button id="call"><span class="material-symbols-outlined">
+                                call
+                            </span></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

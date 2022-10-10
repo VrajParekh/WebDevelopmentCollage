@@ -1,0 +1,9 @@
+window.document.write();
+    HTML is window
+    Body is document
+    Document is DOM object
+
+window.document.getElementByTagName("p");
+window.document.getElementById("id");
+window.document.getElementByClassName("className");
+

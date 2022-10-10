@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Registration Form</h1>
+        <form>
+            <label><b>User Name</b></label>
+            <input type="text" placeholder="User Name"><br><br>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Password"><br><Br>
+
+            <label><b>Select your current year</b></label>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="Year" value="1st">1st Year
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="Year" value="2nd">2nd Year
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="Year" value="3rd">3rd Year
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="Year" value="4th">4th Year
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <label><b>Select any subject</b></label><br>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="DM">Discrete Maths
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="AJP">Advanced Java
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="DAA">Design Analysis and Algorithm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="PDS">Python for Data Science
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <label><b>Tell us something about you</b></label><br>
+            <textarea name="textarea" placeholder="write here" id="" cols="30" rows="5"></textarea>
+            <br><br>
+
+            <label><b>Enter your Birth Date</b></label>
+            <input type="date" name="date">
+            <br><br>
+
+            <label><b>Upload your marksheet</b></label>
+            <input type="file" name="file">
+            <br><br>
+
+            <label><b>Select your branch</b></label>
+            <select name="branch">
+                <option value="IT">IT</option>
+                <option value="CP">CP</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+</body>
+</body>
+</body>
+
+</html>

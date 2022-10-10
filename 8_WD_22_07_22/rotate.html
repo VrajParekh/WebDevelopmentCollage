@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+
+    <style>
+        .table1 {
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            width: 200px;
+
+            border: 2px solid;
+            border-collapse: collapse;
+            border-color: rgb(6, 6, 255);
+            background-color: yellow;
+            box-shadow: 0px 4px 5px 0 rgb(255, 255, 201), 0px 4px 5px 0 rgb(255, 255, 201);
+
+            transform: rotate(-20deg);
+        }
+
+        .border1 {
+            border: 1px solid;
+            /* border: 1px dotted; */
+            /* border-color: rgb(144, 144, 216); */
+        }
+
+        .tr1 {
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- two types: 1>absolute
+                    2>relative 
+            
+    -->
+    <table class="table1">
+        <tbody align="center">
+            <tr class="tr1" style="height: 50px;">
+                <td class="border1">
+                    Hiii
+                </td>
+            </tr>
+            <tr class="tr1">
+                <td class="border1">
+                    Hiii
+                </td>
+            </tr>
+            <tr class="tr1">
+                <td class="border1">
+                    Hiii
+                </td>
+            </tr>
+            <tr class="tr1">
+                <td class="border1">
+                    Hiii
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

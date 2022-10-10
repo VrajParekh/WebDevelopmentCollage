@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: lightyellow;
+            margin: 10px;
+        }
+
+        .container {
+            border: 3px solid;
+            margin: 10px 20px;
+            height: 1000px;
+            width: 1450px;
+        }
+
+        .note {
+            border: 2px solid none;
+            width: 350px;
+            height: 350px;
+            box-shadow: 9px 8px 20px black;
+        }
+
+
+        h2 {
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 50px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            margin: 1px;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 80px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        #box1 {
+            transform: rotate(15deg);
+            position: relative;
+            top: 50px;
+            left: 150px;
+        }
+
+        #box2 {
+            transform: rotate(-25deg);
+            position: relative;
+            top: 70px;
+            left: 100px;
+        }
+
+        #box3 {
+            transform: rotate(35deg);
+            position: relative;
+            top: 70px;
+            left: 2px;
+        }
+
+        #box4 {
+            transform: rotate(-25deg);
+            position: relative;
+            top: 70px;
+            left: -20px;
+        }
+
+        #box5 {
+            transform: rotate(-10deg);
+            position: relative;
+            bottom: 50px;
+            left: 100px;
+        }
+
+        #box6 {
+            transform: rotate(-45deg);
+            /* position: relative;
+            top:50px;
+            left:300px; */
+        }
+
+        #box7 {
+            transform: rotate(-200deg);
+            position: relative;
+            top: 250px;
+            left: 110px;
+        }
+
+        #box8 {
+            transform: rotate(55deg);
+            position: relative;
+            bottom: -200px;
+            left: -25px;
+        }
+
+        #box9 {
+            transform: rotate(19deg);
+            position: relative;
+            top: -120px;
+            left: 150px;
+        }
+
+        #box10 {
+            transform: rotate(-10deg);
+            position: relative;
+            bottom: 100px;
+            left: 100px;
+        }
+
+        #box11 {
+            transform: rotate(25deg);
+            position: relative;
+            bottom: 350px;
+            right: 50px;
+        }
+
+        #box12 {
+            transform: rotate(5deg);
+            position: relative;
+            bottom: 450px;
+            right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <div class="note" id="box1" style="background-color:lightblue ;">
+                <h2>Note #1</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box2" style="background-color:lightcoral ;">
+                <h2>Note #2</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box3" style="background-color:lightseagreen ;">
+                <h2>Note #3</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box4" style="background-color:lightgray ;">
+                <h2>Note #4</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box5" style="background-color:lightgreen ;">
+                <h2>Note #5</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box6" style="background-color:lightpink ;">
+                <h2>Note #6</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box7" style="background-color:lightsalmon ;">
+                <h2>Note #7</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box8" style="background-color:lightskyblue ;">
+                <h2>Note #8</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box9" style="background-color:lightslategrey ;">
+                <h2>Note #9</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box10" style="background-color:blueviolet ;">
+                <h2>Note #10</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box11" style="background-color:rosybrown ;">
+                <h2>Note #11</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+            <div class="note" id="box12" style="background-color:chocolate ;">
+                <h2>Note #12</h2>
+                <p>Text Content...</p>
+            </div>
+            <li>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+
+<body>
+    <script>
+        var num = 1;
+        document.write("<table border=\" \">");
+        document.write("<thead>");
+        document.write("<tr>");
+        document.write("<th>Sun</th>");
+        document.write("<th>Mon</th>");
+        document.write("<th>Tue</th>");
+        document.write("<th>Wed</th>");
+        document.write("<th>Thu</th>");
+        document.write("<th>Fri</th>");
+        document.write("<th>Sat</th>");
+        document.write("</tr>");
+        document.write("</thead>");
+        for (var i = 1; i <= 52; i++) {
+            document.write("<tr>");
+            for (var j = 1; j <= 7; j++) {
+                if (num <= 31) {
+                    document.write("<td>");
+                    document.write(num);
+                }
+                else {
+                    num = 1;
+                    break;
+                }
+                num = num + 1;
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+
+</html>

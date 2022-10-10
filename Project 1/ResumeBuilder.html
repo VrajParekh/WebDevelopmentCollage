@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+  </head>
+  <body>
+    <div align="center">
+      <h1>ADIT Resume Parsing System</h1>
+    </div>
+    <br />
+    <div>
+      <form>
+        <table align="center" border="2" width="100%">
+          <thead>
+            <tr>
+              <th colspan="2">
+                <h2>Resume</h2>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <strong>CONTACT INFORMATION:</strong>
+              </td>
+            </tr>
+            <tr>
+              <td width="60%">First Name:</td>
+              <td><input type="text" name="fname" size="140" /></td>
+            </tr>
+            <tr>
+              <td>Last Name:</td>
+              <td><input type="text" name="lname" size="140" /></td>
+            </tr>
+            <tr>
+              <td>E-mail:</td>
+              <td><input type="email" name="email" size="140" /></td>
+            </tr>
+            <tr>
+              <td>Phone Number:</td>
+              <td><input type="number" name="pno" /></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <strong>ADDRESS INFORMATION:</strong>
+              </td>
+            </tr>
+            <tr>
+              <td width="30%">Address:</td>
+              <td><textarea name="add" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <strong>PERSONAL INFORMATION:</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>
+                <input type="radio" name="gen" />Male
+                <input type="radio" name="gen" />Female
+              </td>
+            </tr>
+
+            <tr>
+              <td width="30%">Date Of Birth:</td>
+              <td><input type="date" name="bd" /></td>
+            </tr>
+            <tr>
+              <td>Language Known</td>
+              <td><input type="text" name="lang" size="140" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table align="center" border="2" width="100%">
+          <tr>
+            <td colspan="5">
+              <strong>EDUCATION QUALIFICATION:</strong>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width="20%"><strong>Education</strong></td>
+            <td align="center"><strong>University/Board</strong></td>
+            <td align="center">
+              <strong>Collage Name/<br />School Name</strong>
+            </td>
+            <td align="center"><strong>Year Of Passing</strong></td>
+            <td align="center"><strong>Percentage</strong></td>
+          </tr>
+          <tr>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+          </tr>
+          <tr>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+          </tr>
+          <tr>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+            <td align="center"><input type="text" /></td>
+          </tr>
+        </table>
+        <br />
+        <table align="center" border="2" width="100%">
+          <tr>
+            <td colspan="2">
+              <strong>TECHNICAL SKILLS:</strong>
+            </td>
+          </tr>
+          <tr>
+            <td width="35%">Language:</td>
+            <td>
+              <input
+                type="text"
+                name="langname"
+                placeholder="eg:C,C++,Java"
+                size="140"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Database:</td>
+            <td>
+              <input type="text" name="db" placeholder="eg:SQL" size="140" />
+            </td>
+          </tr>
+          <tr>
+            <td>Opearating Systems:</td>
+            <td>
+              <input
+                type="text"
+                name="os"
+                placeholder="eg:windows"
+                size="140"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Software:</td>
+            <td>
+              <input
+                type="text"
+                name="softw"
+                placeholder="eg:VS code"
+                size="140"
+              />
+            </td>
+          </tr>
+        </table>
+        <table align="center" border="2" width="100%">
+          <tr>
+            <td colspan="2">
+              <strong>OBJECTIVES:</strong>
+            </td>
+          </tr>
+          <tr>
+            <td><textarea name="obj" cols="60" rows="10" placeholder="Write Here..."></textarea></td>
+          </tr>
+        </table>
+        <table align="center" border="2" width="100%">
+          <tr>
+            <td colspan="2">
+              <strong>WORK EXPERIENCE:</strong>
+            </td>
+          </tr>
+          <tr>
+            <td><textarea name="ex" cols="60" rows="10" placeholder="Write Here..."></textarea></td>
+          </tr>
+        </table>
+        </table>
+        <table align="center" border="2" width="100%">
+          <tr>
+            <td colspan="2">
+              <strong>PUBLICATIONS:</strong>
+            </td>
+          </tr>
+          <tr>
+            <td><textarea name="pub" cols="60" rows="10" placeholder="Write Here..."></textarea></td>
+          </tr>
+        </table>
+        </table>
+        <table align="center" border="2" width="100%">
+          <tr>
+            <td colspan="2">
+              <strong>ACHIEVEMENTS:</strong>
+            </td>
+          </tr>
+          <tr>
+            <td><textarea name="achi" cols="60" rows="10" placeholder="Write Here..."></textarea></td>
+          </tr>
+        </table>
+        </table>
+        <table align="center" border="2" width="100%">
+          <tr>
+            <td colspan="2">
+              <strong>REFERENCES:</strong>
+            </td>
+          </tr>
+          <tr>
+            <td><textarea name="ref" cols="60" rows="10" placeholder="Write Here..."></textarea></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

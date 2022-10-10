@@ -1,0 +1,28 @@
+*{
+    font-family: 'Noto Serif Georgian', serif;
+}
+/* .container{
+    margin: 10px auto;
+} */
+#pg{
+    margin: 0px 0px;
+    height: 100px;
+    font-size: 30px;
+    font-weight:400;
+    border-bottom: 2px solid black;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.tb table tr{
+    height: 50px;
+}
+.tb table tr td{
+    width: 100px;
+}
+.tb table tr td button{
+    height: 50px;
+    width: 100px;
+    font-size: large;
+}

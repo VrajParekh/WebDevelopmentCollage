@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .container {
+            background-color: lightblue;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            /* align-content: center; */
+        }
+
+        .form-info {
+            height: 500px;
+            width: 500px;
+            background-color: black;
+            border-radius: 25px;
+        }
+
+        .tr {
+            height: 50px;
+        }
+
+        .tr td {
+            width: 300px;
+            height: 70px;
+        }
+
+        .tr td input {
+            width: 280px;
+            height: 40px;
+        }
+
+        #btn {
+            color: black;
+            background-color: cyan;
+            border-radius: 10px;
+            width: 150px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-info">
+                <h1 align="center">Registration Form</h1>
+                <table>
+                    <tr class="tr">
+                        <td>
+                            <h3>Name</h3>
+                        </td>
+                        <td>
+                            <input type="text" name="name">
+
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td>
+                            <h3>Enrolment Number</h3>
+                        </td>
+                        <td>
+                            <input type="number" name="eno">
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td>
+                            <h3>Branch</h3>
+                        </td>
+                        <td>
+                            <input type="text" name="branch">
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td>
+                            <h3> E-mail</h3>
+                        </td>
+                        <td>
+                            <input type="email" name="email">
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td>
+                            <h3>Mobile number</h3>
+                        </td>
+                        <td>
+                            <input type="number" name="phno">
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td colspan="2" align="center">
+                            <input id="btn" type="submit" name="submit">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

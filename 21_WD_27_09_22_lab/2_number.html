@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+    <style>
+        div {
+            background-color: black;
+            color: white;
+        }
+
+        #div1 {
+            width: 200px;
+            height: 20px;
+        }
+
+        #div2 {
+            height: 200px;
+            width: 20px;
+        }
+
+        #div3 {
+            height: 200px;
+            width: 20px;
+        }
+
+        #div4 {
+            width: 200px;
+            height: 20px;
+        }
+
+        #div5 {
+            height: 200px;
+            width: 20px;
+        }
+
+        #div6 {
+            height: 200px;
+            width: 20px;
+        }
+
+        #div7 {
+            width: 200px;
+            height: 20px;
+        }
+    </style>
+</head>
+<script>
+    let count = 0
+    function f() {
+        if (count === 0) {
+            document.getElementById("div1").style.backgroundColor = "black"
+            document.getElementById("div2").style.backgroundColor = "black"
+            document.getElementById("div3").style.backgroundColor = "black"
+            document.getElementById("div4").style.backgroundColor = "white"
+            document.getElementById("div5").style.backgroundColor = "black"
+            document.getElementById("div6").style.backgroundColor = "black"
+            document.getElementById("div7").style.backgroundColor = "black"
+        }
+        if (count === 1) {
+            document.getElementById("div1").style.backgroundColor = "white"
+            document.getElementById("div2").style.backgroundColor = "white"
+            document.getElementById("div3").style.backgroundColor = "black"
+            document.getElementById("div4").style.backgroundColor = "white"
+            document.getElementById("div5").style.backgroundColor = "white"
+            document.getElementById("div6").style.backgroundColor = "black"
+            document.getElementById("div7").style.backgroundColor = "white"
+        }
+        if (count === 2) {
+            document.getElementById("div1").style.backgroundColor = "black"
+            document.getElementById("div2").style.backgroundColor = "white"
+            document.getElementById("div3").style.backgroundColor = "black"
+            document.getElementById("div4").style.backgroundColor = "black"
+            document.getElementById("div5").style.backgroundColor = "black"
+            document.getElementById("div6").style.backgroundColor = "white"
+            document.getElementById("div7").style.backgroundColor = "black"
+        }
+        if (count === 3) {
+            document.getElementById("div1").style.backgroundColor = "black"
+            document.getElementById("div2").style.backgroundColor = "white"
+            document.getElementById("div3").style.backgroundColor = "black"
+            document.getElementById("div4").style.backgroundColor = "black"
+            document.getElementById("div5").style.backgroundColor = "white"
+            document.getElementById("div6").style.backgroundColor = "black"
+            document.getElementById("div7").style.backgroundColor = "black"
+        }
+        if (count === 4) {
+            document.getElementById("div1").style.backgroundColor = "white"
+            document.getElementById("div2").style.backgroundColor = "black"
+            document.getElementById("div3").style.backgroundColor = "black"
+            document.getElementById("div4").style.backgroundColor = "black"
+            document.getElementById("div5").style.backgroundColor = "white"
+            document.getElementById("div6").style.backgroundColor = "black"
+            document.getElementById("div7").style.backgroundColor = "white"
+        }
+        if (count === 5) {
+            document.getElementById("div3").style.backgroundColor = "white"
+            document.getElementById("div5").style.backgroundColor = "white"
+            document.getElementById("div1").style.backgroundColor = "black"
+            document.getElementById("div2").style.backgroundColor = "black"
+            document.getElementById("div4").style.backgroundColor = "black"
+            document.getElementById("div6").style.backgroundColor = "black"
+            document.getElementById("div7").style.backgroundColor = "black"
+        }
+        if (count === 6) {
+            document.getElementById("div3").style.backgroundColor = "white"
+            document.getElementById("div1").style.backgroundColor = "black"
+            document.getElementById("div2").style.backgroundColor = "black"
+            document.getElementById("div4").style.backgroundColor = "black"
+            document.getElementById("div5").style.backgroundColor = "black"
+            document.getElementById("div6").style.backgroundColor = "black"
+            document.getElementById("div7").style.backgroundColor = "black"
+        }
+        if (count === 7) {
+            document.getElementById("div2").style.backgroundColor = "white"
+            document.getElementById("div4").style.backgroundColor = "white"
+            document.getElementById("div5").style.backgroundColor = "white"
+            document.getElementById("div7").style.backgroundColor = "white"
+            document.getElementById("div1").style.backgroundColor = "black"
+            document.getElementById("div3").style.backgroundColor = "black"
+            document.getElementById("div6").style.backgroundColor = "black"
+        }
+        if (count === 8) {
+            document.getElementById("div1").style.backgroundColor = "black"
+            document.getElementById("div2").style.backgroundColor = "black"
+            document.getElementById("div3").style.backgroundColor = "black"
+            document.getElementById("div4").style.backgroundColor = "black"
+            document.getElementById("div5").style.backgroundColor = "black"
+            document.getElementById("div6").style.backgroundColor = "black"
+            document.getElementById("div7").style.backgroundColor = "black"
+        }
+        if (count === 9) {
+            document.getElementById("div5").style.backgroundColor = "white"
+            document.getElementById("div1").style.backgroundColor = "black"
+            document.getElementById("div2").style.backgroundColor = "black"
+            document.getElementById("div3").style.backgroundColor = "black"
+            document.getElementById("div4").style.backgroundColor = "black"
+            document.getElementById("div6").style.backgroundColor = "black"
+            document.getElementById("div7").style.backgroundColor = "black"
+        }
+        count++
+    }
+</script>
+
+<body>
+    <script>
+        setInterval(f, 1000)
+    </script>
+    <table>
+        <tr>
+            <td colspan="3">
+                <div id="div1">1</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="div2">2</div>
+            </td>
+            <td></td>
+            <td align="right">
+                <div id="div3">3</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="div4">4</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="div5">5</div>
+            </td>
+            <td></td>
+            <td align="right">
+                <div id="div6">6</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="div7">7</div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

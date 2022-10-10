@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 3px solid lightgray;
+            margin: 100px auto;
+        }
+
+        .border-td {
+            border-bottom: 1px solid;
+        }
+
+        .t1 {
+            margin: 50% auto;
+            transform: rotate(45deg);
+        }
+
+        .t2 {
+            margin: -296px auto;
+            transform: rotate(-45deg);
+        }
+
+        span {
+            display: inline-block;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table class="t1" width="100%">
+            <tr>
+                <td class="border-td">ADIT</td>
+            </tr>
+            <tr>
+                <td align="right"><span>ADIT</span></td>
+            </tr>
+        </table>
+        <table class="t2" width="100%">
+            <tr>
+                <td class="border-td">ADIT</td>
+            </tr>
+            <tr>
+                <td align="right"><span>ADIT</span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

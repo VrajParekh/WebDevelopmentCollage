@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        span {
+            color: red;
+        }
+
+        .div {
+            border: 1px solid;
+            width: 50%;
+            background-color: rgb(149, 107, 189);
+        }
+    </style>
+
+    <script>
+        function valid() {
+            var n = document.getElementById("name").value;
+            if (n.length == 0) {
+                document.getElementById("a1").innerHTML = "Please enter the name !!!"
+            }
+            else {
+                for (var i = 0; i < n.length; i++) {
+                    if (n.charAt(i) == '1' || n.charAt(i) == '2' || n.charAt(i) == '3' || n.charAt(i) == '4' || n.charAt(i) == '5' || n.charAt(i) == '6' || n.charAt(i) == '7' || n.charAt(i) == '8' || n.charAt(i) == '9' || n.charAt(i) == '0') {
+                        document.getElementById("a1").innerHTML = "Please enter the valid name !!!"
+                        break;
+                    }
+                    else {
+                        document.getElementById("a1").innerHTML = ""
+                    }
+                }
+            }
+
+            var ph = document.getElementById("ph_no").value;
+            if (ph.length != 10) {
+                document.getElementById("a4").innerHTML = "Enter the valid phone number";
+            }
+            else if (ph.length == 10) {
+                document.getElementById("a4").innerHTML = "";
+            }
+
+            var e = document.getElementById("email").value;
+            var count = 0;
+            for (var j = 0; j < e.length; j++) {
+                if (e.charAt(j) == '@') {
+                    count = count + 1;
+                }
+            }
+            if (count == 1) {
+                document.getElementById("a5").innerHTML = "";
+            }
+            else {
+                document.getElementById("a5").innerHTML = "Please enter the valid email"
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <div class="div">
+            <h2>Student Form</h2>
+            <table>
+                <tr>
+                    <td style="background-color: rgb(232, 232, 152);"><span>*</span><label for="">Name: </label></td>
+                    <td><input type="text" id="name" placeholder="e.g. x y z"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(232, 232, 152);"><span>*</span><label for="">Enrollment No.:
+                        </label></td>
+                    <td><input type="text" id="en_no" placeholder="e.g. 12002040601028"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(232, 232, 152);"><span>*</span><label for="">Branch: </label></td>
+                    <td><input type="text" id="branch" placeholder="e.g. Computer"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(232, 232, 152);"><span>*</span><label for="">Phone No.: </label>
+                    </td>
+                    <td><input type="number" id="ph_no" placeholder="e.g. 0123456789"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(232, 232, 152);"><span>*</span><label for="">Email Address:
+                        </label></td>
+                    <td><input type="email" id="email" placeholder="e.g. abc@gmail.com"></td>
+                </tr>
+            </table><br>
+            <button onclick="valid()" style="background-color: rgb(232, 232, 152);">Submit Data</button>
+            <p id="a1"></p>
+            <p id="a4"></p>
+            <p id="a5"></p>
+        </div>
+    </center>
+</body>
+
+</html>

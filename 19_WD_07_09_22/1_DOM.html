@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+        function add() {
+            let a1 = document.getElementById("v1").value;
+            let a2 = document.getElementById("v2").value;
+            let a3 = parseInt(a1) + parseInt(a2)
+            // document.write(a3)
+            document.getElementById("show_ans").innerHTML = "Answer is: " + a3
+        }
+        function sub() {
+            let a1 = document.getElementById("v1").value;
+            let a2 = document.getElementById("v2").value;
+            let a3 = parseInt(a1) - parseInt(a2)
+            // document.write(a3)
+            document.getElementById("show_ans").innerHTML = "Answer is: " + a3
+        }
+        function mul() {
+            let a1 = document.getElementById("v1").value;
+            let a2 = document.getElementById("v2").value;
+            let a3 = parseInt(a1) * parseInt(a2)
+            // document.write(a3)
+            document.getElementById("show_ans").innerHTML = "Answer is: " + a3
+        }
+    </script>
+</head>
+
+<body>
+    <label for="v1">Value 1</label><input type="text" name="" id="v1"><br><br>
+    <label for="v2">Value 2</label><input type="text" name="" id="v2"><br>
+    <p id="show_ans"></p>
+    <button onclick="add()">
+        ADD
+    </button>
+    <button onclick="sub()">
+        SUB
+    </button>
+    <button onclick="mul()">
+        MUL
+    </button>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func() {
+            var text1 = document.getElementById("name").value
+            // var text2 = text1.length
+            // var text2 = text1.charAt(2)
+            // document.getElementById("data").innerHTML = text2
+
+            var text2 = "ADIT"
+            // var text3 = text1.localeCompare(text2)//it will compare two strings
+
+            // 0123456789
+            // how are you
+
+            // var text3 = text1.slice(4, 6)
+            // var text3 = text1.substring(-4, 6)
+            // var text3 = text1.toUpperCase()
+            // var text3 = text1.toLowerCase()
+            var text3 = text1.replace("are", "vraj")
+
+
+            document.getElementById("data").innerHTML = text3
+        }
+    </script>
+</head>
+
+<body>
+    <label for="name">Name</label>
+    <input type="text" id="name"><br><br>
+
+    <!-- <label for="email">E-mail</label>
+    <input type="email" id="email"><br><br> -->
+
+    <button onclick="func()">Submit</button>
+
+    <p id="data"></p>
+</body>
+
+</html>

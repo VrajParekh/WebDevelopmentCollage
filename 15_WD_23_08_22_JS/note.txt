@@ -1,0 +1,4 @@
+-->1991
+-->netstate
+-->aspect oriented programming(don't follow sequence)
+-->html is parser and js is compiler

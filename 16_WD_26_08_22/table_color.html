@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table align="center">
+        <script>
+            var r = 125;
+            var g = 255;
+            var b = 255;
+            var a = 0.1;
+            for (var i = 1; i <= 10; i++) {
+                // document.write("<tr style=\" background-color: rgba("+a" + ); \">");
+                document.write("<tr style=\"background-color:rgb(" + r + "," + g + "," + b + "," + a + ");\" >");
+                document.write("<td  width=500px; height=70px;></td>");
+                document.write("</tr>");
+                // a = a + 10;
+                g = g + 10;
+                b = b + 10;
+                a = a + 0.1;
+            }
+            document.write("</table>");
+        </script>
+    </table>
+</body>
+
+</html>

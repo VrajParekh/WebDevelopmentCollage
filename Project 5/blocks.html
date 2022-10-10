@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Blocks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(186, 140, 99);
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+            justify-content: center;
+            align-content: center;
+            gap: 10px;
+        }
+
+        .block {
+            background-color: aquamarine;
+            position: relative;
+        }
+
+        #b8 {
+            animation: move8 1s ease-in-out normal 0s forwards;
+        }
+
+        #b7 {
+            animation: move7 1s ease-in-out normal 1s forwards;
+        }
+
+        #b4 {
+            animation: move4 1s ease-in-out normal 2s forwards;
+        }
+
+        #b1 {
+            background-color: lightgreen;
+            animation: move1 6s ease-in-out normal 3s forwards;
+        }
+
+        #b2 {
+            animation: move2 1s ease-in-out normal 4s forwards;
+        }
+
+        #b3 {
+            animation: move3 1s ease-in-out normal 5s forwards;
+        }
+
+        #b6 {
+            animation: move6 1s ease-in-out normal 6s forwards;
+        }
+
+        #b5 {
+            animation: move5 1s ease-in-out normal 7s forwards;
+        }
+
+        @keyframes move8 {
+            0% {
+                left: 0px;
+            }
+
+            100% {
+                left: 210px;
+            }
+        }
+
+        @keyframes move7 {
+            0% {
+                left: 0px;
+            }
+
+            100% {
+                left: 210px;
+            }
+        }
+
+        @keyframes move4 {
+            0% {
+                top: 0px;
+            }
+
+            100% {
+                top: 210px;
+            }
+        }
+
+        @keyframes move1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            16.67% {
+                top: 210px;
+                left: 0px;
+            }
+
+            83.35% {
+                top: 210px;
+                left: 0px;
+            }
+
+            100% {
+                top: 210px;
+                left: 210px;
+            }
+        }
+
+        @keyframes move2 {
+            0% {
+                right: 0px;
+            }
+
+            100% {
+                right: 210px;
+            }
+        }
+
+        @keyframes move3 {
+            0% {
+                right: 0px;
+            }
+
+            100% {
+                right: 210px;
+            }
+        }
+
+        @keyframes move6 {
+            0% {
+                bottom: 0px;
+            }
+
+            100% {
+                bottom: 210px;
+            }
+        }
+
+        @keyframes move5 {
+            0% {
+                left: 0px;
+            }
+
+            100% {
+                left: 210px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block" id="b1">
+            <!-- Box 1 -->
+        </div>
+        <div class="block" id="b2">
+            <!-- Box 2 -->
+        </div>
+        <div class="block" id="b3">
+            <!-- Box 3 -->
+        </div>
+        <div class="block" id="b4">
+            <!-- Box 4 -->
+        </div>
+        <div class="block" id="b5">
+            <!-- Box 5 -->
+        </div>
+        <div class="block" id="b6">
+            <!-- Box 6 -->
+        </div>
+        <div class="block" id="b7">
+            <!-- Box 7 -->
+        </div>
+        <div class="block" id="b8">
+            <!-- Box 8 -->
+        </div>
+    </div>
+</body>
+
+</html>
